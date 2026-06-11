@@ -32,7 +32,9 @@
     <Reference Include="System.Web.Http.Owin">
       <HintPath>packages/Microsoft.AspNet.WebApi.Owin.5.2.9/lib/net45/System.Web.Http.Owin.dll</HintPath>
     </Reference>
-
+    <Reference Include="Swashbuckle.Core">
+      <HintPath>packages/Swashbuckle.Core.5.6.0/lib/net40/Swashbuckle.Core.dll</HintPath>
+      </Reference>   
     <Reference Include="System.Net.Http.Formatting">
       <HintPath>packages/Microsoft.AspNet.WebApi.Client.5.2.9/lib/net45/System.Net.Http.Formatting.dll</HintPath>
       <Private>True</Private>
@@ -67,6 +69,7 @@
     <Compile Include="Controllers/CustomerController.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Swagger\SwaggerConfig.cs" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)/Microsoft.CSharp.targets" />

@@ -12,7 +12,7 @@ namespace UserPatchApi
 
             // Attribute routing
             config.MapHttpAttributeRoutes();
-
+	    UserPatchApi.Swagger.SwaggerConfig.Register(config);
             // Rate limiting — 10 requests per minute per IP (429 on breach)
             // config.MessageHandlers.Add(new ThrottlingHandler()
             // {
